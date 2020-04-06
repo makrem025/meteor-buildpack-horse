@@ -60,7 +60,6 @@ rmdir $BUNDLE_DEST
 if [ -e "$COMPILE_DIR"/app/programs/server/package.json ]; then
   echo "-----> Running meteor npm install"
   cd "$COMPILE_DIR"/app/programs/server && HOME=$METEOR_DIR $METEOR npm install
-  cd "$COMPILE_DIR"/app/programs/server && HOME=$METEOR_DIR $METEOR npm uninstall fibers && HOME=$METEOR_DIR $METEOR npm install fibers
 fi
 
 #
